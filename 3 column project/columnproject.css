@@ -1,0 +1,198 @@
+:root {
+    --color1:hsl(31, 77%, 52%);
+    --color2:hsl(184, 100%, 22%);
+    --color3:hsl(179, 100%, 13%);
+    --color4:hsla(0, 0%, 100%, 0.75);
+    --color5:hsl(0, 0%, 95%);
+    --font1:'Lexend Deca', sans-serif;
+    --font2:'Big Shoulders Display', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size:15px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color5);
+}
+
+.column-container {
+    margin: 30px auto;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+section h2 {
+    font-family: var(--font2);
+    color: var(--color5);
+    font-size: 1.75em;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: var(--color4);
+    margin-bottom:25px ;
+    font-family: var(--font1);
+}
+
+section img {
+    margin-bottom:15px;
+}
+
+.car-sedan {
+    background-color: var(--color1);
+    height: 340px;
+    padding:40px;
+}
+
+.car-suv {
+    background-color:var(--color2);
+    height: 340px;
+    padding:40px;
+}
+
+.car-luxury {
+    background-color:var(--color3);
+    height: 340px;
+    padding:40px;
+}
+
+section button {
+    padding: .55em 1.5em;
+    border-radius:25px;
+    border-style: none;
+    background-color:white;
+    font-family: var(--font1);
+}
+
+.button-learn button{
+    color: var(--color1);
+}
+
+.button-learn2 button {
+    color: var(--color2);
+}
+
+.button-learn3 button {
+    color: var(--color3);
+}
+
+.button-learn button:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+    border: 3px solid white;
+    color: var(--color5);
+    transition: 0.5s;
+}
+
+.button-learn2 button:hover {
+    background-color: var(--color2);
+    cursor: pointer;
+    border: 3px solid white;
+    color: var(--color5);
+    transition: 0.5s;
+}
+
+.button-learn3 button:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+    border: 3px solid white;
+    color: var(--color5);
+    transition: 0.5s;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--font1);
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration:none;
+    color: var(--color1);
+}
+
+footer a:hover {
+    color: var(--color2);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 17px;
+    transition: .5s ease-out;
+    
+}
+
+@media screen and (min-width:1440px) and (max-width:2000px) {
+    
+    .column-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 950px;
+        max-width: 950px;
+        flex-direction: row;
+        height: 55vh;
+        max-height: 55vh;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+    }
+
+    .car-sedan {
+        height:100%;
+    }
+
+    .car-suv {
+        height: 100%;
+    }
+    .car-luxury {
+        height: 100%;
+    }
+
+    section p {
+        margin-bottom:120px;
+        font-size: 1.15em;
+        line-height: 23px;
+    }
+     section h2 {
+        font-size: 2.35em;
+        margin-bottom:50px;
+     }
+
+     section img {
+        margin-bottom: 30px;
+     }
+
+     footer {
+        position: absolute;
+        bottom: 0px;
+     }
+    
+}
+
+
+
+
+
+
+
