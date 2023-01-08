@@ -146,8 +146,7 @@ footer a:hover {
         width: 950px;
         max-width: 950px;
         flex-direction: row;
-        height: 55vh;
-        max-height: 55vh;
+        
     }
 
     body {
